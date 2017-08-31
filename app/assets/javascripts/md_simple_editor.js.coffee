@@ -61,7 +61,7 @@ preview = ->
       '/md_simple_editor/preview',
       {md: $('#md-text textarea').val()},
       (data) ->
-        $('.preview_md').text('Editor')
+        $('.preview_md').text('編集')
         $('#md-text').attr('hidden', 'true')
         $('.preview-panel').removeAttr('hidden')
         $('#md-preview').html(data)
