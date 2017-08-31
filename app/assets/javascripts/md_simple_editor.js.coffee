@@ -52,7 +52,7 @@ md_simple_editor = () ->
 
 preview = ->
   if $('#md-text').prop('hidden')
-    $('.preview_md').text('Preview')
+    $('.preview_md').text('プレビュー')
     $('#md-text').removeAttr('hidden')
     $('.preview-panel').attr('hidden', 'true')
     false
