@@ -14,38 +14,38 @@ md_simple_editor = () ->
       option = option[0].toString()
 
       text = if option == 'md_h1'
-               "# Your Title here"
+               "# タイトルを入力"
             else if option == 'md_h2'
-               "## Your Title here"
+               "## タイトルを入力"
             else if option == 'md_h3'
-               "### Your Title here"
+               "### タイトルを入力"
             else if option == 'md_h4'
-               "#### Your Title here"
+               "#### タイトルを入力"
             else if option == 'md_h5'
-               "##### Your Title here"
+               "##### タイトルを入力"
             else if option == 'md_italic'
-               "_Your italic text here_"
+               "_斜体のテキストを入力_"
             else if option == 'md_bold'
-               "__Your bold text here__"
+               "__太字のテキストを入力__"
             else if option == 'md_list-ul'
-               "\n\n* Item 1\n* Item 2\n* Item 3 \n\n<br>"
+               "\n\n* アイテム 1\n* アイテム 2\n* アイテム 3 \n\n<br>"
             else if option == 'md_list-ol'
-               "\n\n1. Item 1\n2. Item 2\n3. Item 3 \n\n<br> "
+               "\n\n1. アイテム 1\n2. アイテム 2\n3. アイテム 3 \n\n<br> "
             else if option == 'md_indent'
-               ">Your indented text here"
+               ">インデントされたテキストを入力"
             else if option == 'md_underline'
-               "<u>Your undelined text here </u>"
+               "<u>下線を引かれるテキストを入力 </u>"
             else if option == 'md_table'
-               "\n|Header|Header|Header|\n|:------|:-------:|------:|\n|Left alignment|Centered|Right alignment|\n\n<br>"
+               "\n|ヘッダー|ヘッダー|ヘッダー|\n|:------|:-------:|------:|\n|左寄せ|中央揃え|右寄せ|\n\n<br>"
             else if option == 'md_minus'
                "\n<hr>\n"
             else if option == 'md_square'
-               "\n\t Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut aliquet velit. Nam fermentum, mi quis egestas ornare, massa velit pharetra ante, sed
-                      pellentesque tortor nisl non quam. Nunc eget egestas orci.\n\n<br> "
+               "\n\t 　ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。
+\n\n<br> "
             else if option == 'md_link'
-              "\n[This is a link](http://google.com)\n"
+              "\n[リンク](http://google.com)\n"
             else if option == 'md_camera-retro'
-              "\n![Alt](https://www.google.com.co/images/srpr/logo11w.png)\n"
+              "\n![代替テキスト](https://www.google.com.co/images/srpr/logo11w.png)\n"
 
       textarea = $('#md-editor #md-text textarea')
       insertAtCaret(textarea.attr('id'), text)
